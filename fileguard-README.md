@@ -87,7 +87,7 @@ python3 fileguard.py check folder2 --baseline folder2-baseline.json
 
 Agar check mein `--baseline` bhool jao to tool default `fileguard_baseline.json` dhoondhega — ya to `[!] No baseline found` ayega, ya galat folder se compare hoga.
 
-## If sir asks how it works
+##  how it works
 
 - `hashlib.sha256()` — har file ka fingerprint banata hai, file ko 8 KB chunks mein parh kar (bari files bhi theek).
 - `os.walk()` — folder ke andar har file tak jata hai, sub-folders samet.
@@ -96,11 +96,11 @@ Agar check mein `--baseline` bhool jao to tool default `fileguard_baseline.json`
 - `fnmatch` — `--exclude` patterns ko match karta hai.
 - `datetime.now()` — har alert ke sath time likhta hai, aur alert `fileguard.log` mein bhi save hota hai.
 
-## Deliverables (PDF se)
+## Deliverables
 
 - Working tool — `fileguard.py`, command line se chalta hai.
 - README — ye file.
-- Short demo aur write-up — lab mein chalao, ek detected change dikhao, batayo kya pakda gaya aur kyun matter karta hai.
+- Short demo aur write-up — lab mein chalao, ek detected change dikhao, btao kya pakda gaya aur kyun matter karta hai.
 - GitHub par publish karna — code + README + sample alert log (`fileguard.log`).
 
 ## Rules from the notice
